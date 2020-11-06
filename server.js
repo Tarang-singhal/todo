@@ -13,7 +13,7 @@ app.use(cors());
 // connection to mongoDB Cluster
 require('./Database/connection');
 
-//routes of all todo list
+//routes of all todo page
 app.use(listRoutes);
 
 //routes of a todo page
