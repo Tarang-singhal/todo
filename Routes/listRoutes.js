@@ -43,7 +43,7 @@ router.put("/editList/:id",(req,res)=>{
 })
 
 //see a particular todo list
-router.get("/allTodos/:id",(req,res)=>{
+router.get("/allTodo/:id",(req,res)=>{
     Todos.findById(req.params.id)
     .then(todo=>{
         res.status(200).json(todo);
