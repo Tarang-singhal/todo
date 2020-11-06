@@ -56,7 +56,7 @@ class AllLists extends React.Component{
 
                 <div className={classes.list}>{
                       this.state.todosList?
-                      this.state.todosList.reverse().map((todoList)=>{
+                      this.state.todosList.map((todoList)=>{
                           return <div key={todoList._id} className={classes.todoList} >
                                     <div className={classes.list}><Link className={classes.link} to={`/${todoList._id}`}> 
                                         {todoList.name}
@@ -64,7 +64,7 @@ class AllLists extends React.Component{
                                     <div onClick={()=>this.handleDelete(todoList._id)} className={classes.delete}><i className="fa fa-trash"></i></div>
                                     <div onClick={()=>this.handleOpen(todoList._id)} className={classes.edit} ><i className="fa fa-pencil" aria-hidden="true"></i></div>
                                   </div>
-                      }):null}
+                      }).reverse():null}
                 </div>
                 <div>
                   <Modal className={classes.modal} open={this.state.openModal} onClose={this.handleClose}>

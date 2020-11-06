@@ -30,7 +30,7 @@ var x = {
         .then(res=>{
           if(res.status===200){
             let todos = cls.state.todos;
-            todos.splice(todos.length-idx-1,1);
+            todos.splice(idx,1);
             cls.setState({
                 todos
             })

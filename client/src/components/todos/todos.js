@@ -45,7 +45,7 @@ class Todos extends React.Component{
                 {
                 this.state.todos
                 ?
-                    this.state.todos.reverse().map((todo,idx)=>{
+                    this.state.todos.map((todo,idx)=>{
                         return (
                         <div className={classes.todoList} key={idx}>
                             <div className={classes.list}> 
@@ -55,7 +55,7 @@ class Todos extends React.Component{
                             <div onClick={()=>this.handleOpen(idx)} className={classes.edit}><i className="fa fa-pencil" aria-hidden="true"></i></div>
                         </div>
                         )
-                    })
+                    }).reverse()
                 :
                     null
                 }
