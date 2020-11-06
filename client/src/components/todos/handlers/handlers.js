@@ -78,4 +78,4 @@ var x = {
     }
 }
 
-module.exports = x;
+export default x;
