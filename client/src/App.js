@@ -1,12 +1,12 @@
 import React from 'react';
-import TodosList from './components/todosList/todosList';
+import AllLists from './components/AllLists/AllLists';
 import { BrowserRouter } from "react-router-dom";
 class App extends React.Component {
 
   render(){
     return (
       <BrowserRouter>
-        <TodosList/>
+        <AllLists/>
       </BrowserRouter>
     );
   }
