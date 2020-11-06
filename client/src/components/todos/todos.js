@@ -19,7 +19,7 @@ class Todos extends React.Component{
     }
     
     componentDidMount = ()=>{
-        fetch(`/seeTodos/${this.state.id}`)
+        fetch(`/allTodos/${this.state.id}`)
         .then((res)=>res.json())
         .then(data=>{
             this.setState({
