@@ -44,7 +44,7 @@ class AllLists extends React.Component{
       
       render(){
         return(
-            <>
+            <div>
 
             <Route exact path={"/"}>
               <div className={classes.container}>
@@ -78,9 +78,9 @@ class AllLists extends React.Component{
               </div>
             </Route>
 
-            <Route exact path={`/allTodos/:id`} component={Todo} />
+            <Route path={`/allTodos/:id`} component={Todo} />
 
-            </>
+            </div>
         )
       }
 }
