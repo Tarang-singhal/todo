@@ -62,7 +62,7 @@ class AllLists extends React.Component{
                                         {todoList.name}
                                     </Link></div>
                                     <div onClick={()=>this.handleDelete(todoList._id)} className={classes.delete}><i className="fa fa-trash"></i></div>
-                                    <div onClick={()=>this.handleOpen(todoList._id)} ><i className="fa fa-pencil" aria-hidden="true"></i></div>
+                                    <div onClick={()=>this.handleOpen(todoList._id)} className={classes.edit} ><i className="fa fa-pencil" aria-hidden="true"></i></div>
                                   </div>
                       }):null}
                 </div>

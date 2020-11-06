@@ -52,7 +52,7 @@ class Todos extends React.Component{
                                 <div className={classes.link}>{todo}</div>
                             </div>
                             <div onClick={()=>this.handleDelete(this.state.id,idx)} className={classes.delete}><i className="fa fa-trash"></i></div>
-                            <div onClick={()=>this.handleOpen(idx)} ><i className="fa fa-pencil" aria-hidden="true"></i></div>
+                            <div onClick={()=>this.handleOpen(idx)} className={classes.edit}><i className="fa fa-pencil" aria-hidden="true"></i></div>
                         </div>
                         )
                     })
