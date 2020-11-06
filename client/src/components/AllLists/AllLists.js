@@ -58,7 +58,7 @@ class AllLists extends React.Component{
                       this.state.todosList?
                       this.state.todosList.map((todoList)=>{
                           return <div key={todoList._id} className={classes.todoList} >
-                                    <div className={classes.list}><Link className={classes.link} to={`/${todoList._id}`}> 
+                                    <div className={classes.list}><Link className={classes.link} to={`/allTodos/${todoList._id}`}> 
                                         {todoList.name}
                                     </Link></div>
                                     <div onClick={()=>this.handleDelete(todoList._id)} className={classes.delete}><i className="fa fa-trash"></i></div>
@@ -78,7 +78,7 @@ class AllLists extends React.Component{
               </div>
             </Route>
 
-            <Route exact path={`/:id`} component={Todo} />
+            <Route exact path={`/allTodos/:id`} component={Todo} />
 
             </>
         )

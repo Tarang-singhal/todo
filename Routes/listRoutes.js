@@ -46,7 +46,7 @@ router.put("/editList/:id",(req,res)=>{
 router.get("/allTodos/:id",(req,res)=>{
     Todos.findById(req.params.id)
     .then(todo=>{
-        res.json(todo);
+        res.status(200).json(todo);
     });
 })
 
